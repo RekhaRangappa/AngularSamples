@@ -1,0 +1,9 @@
+<h1>My First {{name}}</h1>
+<h2>Pick a highlighting color</h2>
+<div>
+    <input type='radio' name='colors' (click)="color='yellow'" >yellow
+    <input type='radio' name='colors' (click)="color='green'">Green
+    <input type='radio' name='colors' (click)="color='pink'">Pink
+</div>
+
+<p [myHighlight]="color"  defaultColor="violet">Highlight me!</p>
